@@ -10,9 +10,9 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 * Ensures all major functionality is available via both a user interface and a public-facing APIs that users can build apps on top of.
 
 ## System requirements and constraints
-●	The system will support millions of users per day.
-●	Uploaded files will range in size from 100K to 1GB.
-●	Uploaded files will be retained as long as possible (ideally forever).
-●	The system provide results as close to real-time as possible.
-●	Metadata and scanning services can run on a mixture of Linux or Windows (not all scanning services support the same OS).
-●	Design will be able to accommodate the addition of new AV engines or metadata scripts.  These additions should be as minimally invasive to the running system as possible (i.e. minimal or zero system downtime, no “big bang” deployments, etc.).
+* The system will support millions of users per day.
+* Uploaded files will range in size from 100K to 1GB.
+* Uploaded files will be retained as long as possible (ideally forever).
+* The system provide results as close to real-time as possible.
+* Metadata and scanning services can run on a mixture of Linux or Windows (not all scanning services support the same OS).
+* Design will be able to accommodate the addition of new AV engines or metadata scripts.  These additions should be as minimally invasive to the running system as possible (i.e. minimal or zero system downtime, no “big bang” deployments, etc.).
