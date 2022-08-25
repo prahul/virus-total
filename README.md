@@ -16,3 +16,6 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 * The system provide results as close to real-time as possible.
 * Metadata and scanning services can run on a mixture of Linux or Windows (not all scanning services support the same OS).
 * Design will be able to accommodate the addition of new AV engines or metadata scripts.  These additions should be as minimally invasive to the running system as possible (i.e. minimal or zero system downtime, no “big bang” deployments, etc.).
+
+## System design
+<img width="1002" alt="image" src="https://user-images.githubusercontent.com/2245716/186568721-e29367ef-c8fc-409e-b542-ec222895e4dd.png">
