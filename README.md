@@ -19,3 +19,17 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 
 ## System design
 <img width="1002" alt="image" src="https://user-images.githubusercontent.com/2245716/186568721-e29367ef-c8fc-409e-b542-ec222895e4dd.png">
+
+## Technology components
+* Containerization: Docker, Kubernetes, OpenShift
+* Event backbone: Kafka
+* Registry: Artifactory
+* Datastore: MaongoDB, Big Data/Datalake
+* Search engine: SOLR
+* Storage: Object
+* CI/CD pipeline: Jenkins
+* Cache: CDN, Redis
+* Monitoring: Dynatrace, Runbook Automation, ServiceNow
+* Logging: Humio log aggregation, Jaeger distributed tracing, Kibana Dashboard
+* Load balancer: F5, API Gateway
+* Application security: OAUTH (jwt token), Istio Service Mesh
