@@ -24,7 +24,7 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 * Containerization: Docker, Kubernetes, OpenShift
 * Event backbone: Kafka
 * Registry: Artifactory
-* Datastore: MaongoDB, Big Data/Datalake
+* Datastore: MaongoDB, Big Data/Datalake, AI/ML
 * Search engine: SOLR
 * Storage: Object
 * CI/CD pipeline: Jenkins
@@ -33,3 +33,5 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 * Logging: Humio log aggregation, Jaeger distributed tracing, Kibana Dashboard
 * Load balancer: F5, API Gateway
 * Application security: OAUTH (jwt token), Istio Service Mesh
+* Programming language: Java, Python, Groovy, Angular
+* Operating System: Linux
