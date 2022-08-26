@@ -41,6 +41,25 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 REST API and microservices development 12 factor principles to be used
 
 ### Register user
+path: 
+POST https://www.myvirustotal/api/users/register
+
+request:
+{
+  "firstname":"fname",
+  "lastname":"lname",
+  "username":"uname",
+  "password":"pwd",
+  "email":"my@email.com"
+}
+
+response: 200 OK
+{
+  "registerid":"12345",
+  "token":"ABVVxTPG",
+  "data":{}
+}
+
 ### Login user
 ### Upload file
 ### File upload status
