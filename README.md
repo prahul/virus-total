@@ -35,3 +35,20 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 * Application security: OAUTH (jwt token), Istio Service Mesh
 * Programming language: Java, Python, Groovy, Angular
 * Operating System: Linux
+* API: REST, 12 Factor, Swagger
+
+## API
+REST API and microservices development 12 factor principles to be used
+
+### Register user
+### Login user
+### Upload file
+### File upload status
+### Scan status
+### Scan results
+### Search scan
+
+## Data model
+
+### User
+### Filemetadatascaninfo
