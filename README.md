@@ -97,7 +97,8 @@ request: <br/>
 {  <br/>
   "filename":"abc.txt",  <br/>
   "filetype":"txt",  <br/>
-  "filesize":"100"  <br/>
+  "filesize":"100",  <br/>
+  "username":"uname"  <br/>
 }
 
 response: 200 OK <br/>
@@ -112,8 +113,76 @@ response: 200 OK <br/>
 
 
 ### File upload status
+path: <br/>
+GET https://www.myvirustotal/api/v1/files/upload/status/{uploadid}
+
+request: <br/>
+
+response: 200 OK <br/>
+{ <br/>
+  "status":"SUCCESS", <br/>
+  "error":{}, <br/>
+  "responsedata":{ <br/>
+  "uploadid":"12345",  <br/>
+  "filename":"abc.txt",  <br/>
+  "filesize":"100", <br/>
+  "uploadsize":"50", <br/>
+  "elapsedtime":"100", <br/>
+  "data":{} <br/>
+  } <br/>
+}
+
 ### Scan status
-### Scan results
+path: <br/>
+GET https://www.myvirustotal/api/v1/files/scan/status/{uploadid}
+
+request: <br/>
+
+response: 200 OK <br/>
+{ <br/>
+  "status":"SUCCESS", <br/>
+  "error":{}, <br/>
+  "responsedata":{ <br/>
+  "uploadid":"12345",  <br/>
+  "filesize":"100", <br/>
+  "filename":"abc.txt",  <br/>
+  "scans":[ <br/>
+     { <br/>
+       "scanid":"12345", <br/>
+       "securityvendor":"Google", <br/>
+       "scanpercent":"10", <br/>
+       "elapsedtime":"100", <br/>
+       "scanstatus":"complete",
+       "virusdetectection":["Malware","Trojan"] <br/>
+     }, <br/>
+     { <br/>
+       "scanid":"12346", <br/>
+       "securityvendor":"McAfee", <br/>
+       "scanpercent":"20", <br/>
+       "elapsedtime":"105", <br/>
+       "virusdetectection":["ML"] <br/>
+     }, <br/>
+     { <br/>
+       "scanid":"12347", <br/>
+       "securityvendor":"WebRoot", <br/>
+       "scanpercent":"15", <br/>
+       "elapsedtime":"115", <br/>
+       "scanstatus":"complete",
+       "virusdetectection":["Trozan","Yandex"] <br/>
+     }, <br/>
+     { <br/>
+       "scanid":"12348", <br/>
+       "securityvendor":"BigDefender", <br/>
+       "scanpercent":"20", <br/>
+       "elapsedtime":"125", <br/>
+       "scanstatus":"complete",
+       "virusdetectection":[] <br/>
+     } <br/>
+  ], <br/>
+  "data":{} <br/>
+  } <br/>
+}
+
 ### Search scan
 
 ## Data model
@@ -137,5 +206,42 @@ response: 200 OK <br/>
  "uploadid":"12345", <br/>
  "filename":"abc.txt",  <br/>
  "filetype":"txt",  <br/>
- "filesize":"100"  <br/>
+ "filesize":"100",  <br/>
+ "username":"uname",  <br/>
+ "filemetadata":{},  <br/>
+ "scans":[ <br/>
+      { <br/>
+       "scanid":"12345", <br/>
+       "securityvendor":"Google", <br/>
+       "scanstatus":"complete",
+       "elapsedtime":"200", <br/>
+       "virusdetectection":["Malware","Trojan"], <br/>
+       "data":{} <br/>
+     }, <br/>
+     { <br/>
+       "scanid":"12346", <br/>
+       "securityvendor":"McAfee", <br/>
+       "scanstatus":"complete",
+       "elapsedtime":"250", <br/>
+       "virusdetectection":["ML"], <br/>
+       "data":{} <br/>
+     }, <br/>
+     { <br/>
+       "scanid":"12347", <br/>
+       "securityvendor":"WebRoot", <br/>
+       "scanstatus":"complete",
+       "elapsedtime":"220", <br/>
+       "virusdetectection":["Trozan","Yandex"], <br/>
+       "data":{} <br/>
+     }, <br/>
+     { <br/>
+       "scanid":"12348", <br/>
+       "securityvendor":"BigDefender", <br/>
+       "scanstatus":"complete",
+       "elapsedtime":"210", <br/>
+       "virusdetectection":[], <br/>
+       "data":{} <br/>
+     }, <br/>
+ ], <br/>
+ "data":{} <br/>
 }
