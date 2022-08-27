@@ -37,6 +37,40 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 * Operating System: Linux
 * API: REST, 12 Factor, Swagger
 
+## Architecture and design considerations
+### User interface
+* Usability and UI design must be done for developing the components
+* UI can be angular/react based components deployed on a containerized environment
+* It must be able to support atleast n-2 versions of major browsers like Chrome, Safari, Firefox, Edge
+* Multipart upload features of the UI/script must be used for uploading large file for scanning
+
+### Think API
+* Use the REST API for microservices and streaming events
+* Use 12 factor principles of API development
+* Use JSON for microservices and Avro for events
+* Use containerized approach which can be horizontally sclable for load and performance
+
+### Security
+* Protect the service components using OAUTH and Service Mesh
+* System must ne protected behind a firewall
+
+### Availability, scalability and fault tolerance
+* Use load balancer and API Gateway to secure and manage traffic.
+* Use Circuit breaker and rate limting patterns
+* Use CQRS pattern for design of components
+* Use Cloud Native principles in the overall design and architecture
+* Have an active / warm data center architecture
+* Consider using Content Delivery Network (CDN) for access for the system from different regions
+* Setup auto deplication between data centers / regions. 
+* Use features like retries, redo logs and software fault toleration mechanism to ensure system is not in inconsistent state due to failures.
+
+### Data driven
+* Make a data driven architecture to manage able to manage the volume, velocity, value, variety and veracity of data
+* Use horizontally scalable schema less database
+* Use object storage to have infinite storage capacity
+* Use data catalog and search engines to flatten and search data
+* Have BigData and Datalake for storing the data and building data pipelines, Analytics , Machone Learning models and AI  
+
 ## API
 REST API and microservices development 12 factor principles to be used
 
