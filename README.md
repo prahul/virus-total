@@ -36,11 +36,12 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 * Programming language: Java, Python, Groovy, Angular
 * Operating System: Linux
 * API: REST, 12 Factor, Swagger
-<pre>
+
 ## API
 REST API and microservices development 12 factor principles to be used
 
 ### Register user
+<pre>
 path: <br/>
 POST https://www.myvirustotal/api/v1/users/register
 
@@ -64,8 +65,9 @@ response: 200 OK <br/>
   "data":{} <br/>
   } <br/>
 }
-
+</pre>
 ### Login user
+<pre>
 path: <br/>
 POST https://www.myvirustotal/api/v1/users/login
 
@@ -88,8 +90,9 @@ response: 200 OK <br/>
   "data":{} <br/>
   } <br/>
 }
-
+</pre>
 ### Upload file
+<pre>
 path: <br/>
 POST https://www.myvirustotal/api/v1/files/upload
 
@@ -110,9 +113,10 @@ response: 200 OK <br/>
   "data":{} <br/>
   } <br/>
 }
-
+</pre>
 
 ### File upload status
+<pre>
 path: <br/>
 GET https://www.myvirustotal/api/v1/files/upload/status/{uploadid}
 
@@ -131,8 +135,9 @@ response: 200 OK <br/>
   "data":{} <br/>
   } <br/>
 }
-
+</pre>
 ### Scan status
+<pre>
 path: <br/>
 GET https://www.myvirustotal/api/v1/files/scan/status/{uploadid}
 
@@ -182,12 +187,13 @@ response: 200 OK <br/>
   "data":{} <br/>
   } <br/>
 }
-
+</pre>
 ### Search scan
 
 ## Data model
 
 ### User
+<pre>
 { <br/>
  "userid":"12345", <br/>
  "firstname":"fname",  <br/>
@@ -200,8 +206,9 @@ response: 200 OK <br/>
  "registerip":"255.255.255.255", <br/>
  "quota":"15" <br/>
 }
-
+</pre>
 ### Filemetadatascaninfo
+<pre>
 { <br/>
  "uploadid":"12345", <br/>
  "filename":"abc.txt",  <br/>
