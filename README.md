@@ -41,10 +41,10 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 REST API and microservices development 12 factor principles to be used
 
 ### Register user
-#### path: <br/>
+##### path: <br/>
 POST https://www.myvirustotal/api/v1/users/register
 
-#### request: <br/>
+##### request: <br/>
 <pre>
 {  <br/>
   "firstname":"fname",  <br/>
@@ -54,7 +54,7 @@ POST https://www.myvirustotal/api/v1/users/register
   "email":"my@email.com"  <br/>
 }
 </pre>
-#### response: 200 OK <br/>
+##### response: 200 OK <br/>
 <pre>
 { <br/>
   "status":"SUCCESS", <br/>
