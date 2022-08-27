@@ -55,12 +55,39 @@ request: <br/>
 
 response: 200 OK <br/>
 { <br/>
-  "registerid":"12345", <br/>
+  "status":"SUCCESS", <br/>
+  "error":{}, <br/>
+  "responsedata":{ <br/>
+  "userid":"12345", <br/>
+  "username":"uname",  <br/>
   "token":"ABVVxTPG", <br/>
   "data":{} <br/>
+  } <br/>
 }
 
 ### Login user
+path: <br/>
+POST https://www.myvirustotal/api/users/login
+
+request: <br/>
+{  <br/>
+  "username":"uname",  <br/>
+  "password":"pwd",  <br/>
+  "loginip":"255.255.255.255",  <br/>
+  "password":"pwd"  <br/>
+}
+
+response: 200 OK <br/>
+{ <br/>
+  "status":"SUCCESS", <br/>
+  "error":{}, <br/>
+  "responsedata":{ <br/>
+  "username":"uname",  <br/>
+  "token":"ABVVxTPG", <br/>
+  "refreshtoken":"ABVVxTPG", <br/>
+  "data":{} <br/>
+  } <br/>
+}
 ### Upload file
 ### File upload status
 ### Scan status
@@ -70,4 +97,17 @@ response: 200 OK <br/>
 ## Data model
 
 ### User
+{ <br/>
+ "userid":"12345", <br/>
+ "firstname":"fname",  <br/>
+ "lastname":"lname",  <br/>
+ "username":"uname",  <br/>
+ "password":"pwd",  <br/>
+ "email":"my@email.com",  <br/>
+ "token":"ABVVxTPG", <br/>
+ "registertype":"R", <br/>
+ "registerip":"255.255.255.255", <br/>
+ "quota":"15" <br/>
+}
+
 ### Filemetadatascaninfo
