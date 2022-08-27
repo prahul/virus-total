@@ -44,13 +44,13 @@ REST API and microservices development 12 factor principles to be used
 path: <br/>
 POST https://www.myvirustotal/api/users/register
 
-request:
-{
-  "firstname":"fname",
-  "lastname":"lname",
-  "username":"uname",
-  "password":"pwd",
-  "email":"my@email.com"
+request: <br/>
+{  <br/>
+  "firstname":"fname",  <br/>
+  "lastname":"lname",  <br/>
+  "username":"uname",  <br/>
+  "password":"pwd",  <br/>
+  "email":"my@email.com"  <br/>
 }
 
 response: 200 OK
