@@ -68,19 +68,20 @@ POST https://www.myvirustotal/api/v1/users/register
 }
 </pre>
 ### Login user
-<pre>
-path: <br/>
+##### path: <br/>
 POST https://www.myvirustotal/api/v1/users/login
 
-request: <br/>
+##### request: <br/>
+<pre>
 {  <br/>
   "username":"uname",  <br/>
   "password":"pwd",  <br/>
   "loginip":"255.255.255.255",  <br/>
   "password":"pwd"  <br/>
 }
-
-response: 200 OK <br/>
+</pre>
+##### response: 200 OK <br/>
+<pre>
 { <br/>
   "status":"SUCCESS", <br/>
   "error":{}, <br/>
@@ -93,19 +94,20 @@ response: 200 OK <br/>
 }
 </pre>
 ### Upload file
-<pre>
-path: <br/>
+##### path: <br/>
 POST https://www.myvirustotal/api/v1/files/upload
 
-request: <br/>
+##### request: <br/>
+<pre>
 {  <br/>
   "filename":"abc.txt",  <br/>
   "filetype":"txt",  <br/>
   "filesize":"100",  <br/>
   "username":"uname"  <br/>
 }
-
-response: 200 OK <br/>
+</pre>
+##### response: 200 OK <br/>
+<pre>
 { <br/>
   "status":"SUCCESS", <br/>
   "error":{}, <br/>
@@ -117,13 +119,13 @@ response: 200 OK <br/>
 </pre>
 
 ### File upload status
-<pre>
-path: <br/>
+##### path: <br/>
 GET https://www.myvirustotal/api/v1/files/upload/status/{uploadid}
 
-request: <br/>
+##### request: <br/>
 
-response: 200 OK <br/>
+##### response: 200 OK <br/>
+<pre>
 { <br/>
   "status":"SUCCESS", <br/>
   "error":{}, <br/>
@@ -139,12 +141,13 @@ response: 200 OK <br/>
 </pre>
 ### Scan status
 <pre>
-path: <br/>
+##### path: <br/>
 GET https://www.myvirustotal/api/v1/files/scan/status/{uploadid}
 
-request: <br/>
+##### request: <br/>
 
-response: 200 OK <br/>
+##### response: 200 OK <br/>
+<pre>
 { <br/>
   "status":"SUCCESS", <br/>
   "error":{}, <br/>
