@@ -42,7 +42,7 @@ REST API and microservices development 12 factor principles to be used
 
 ### Register user
 path: 
-POST https://www.myvirustotal/api/users/register </br>
+POST https://www.myvirustotal/api/users/register
 
 request:
 {
