@@ -140,7 +140,6 @@ GET https://www.myvirustotal/api/v1/files/upload/status/{uploadid}
 }
 </pre>
 ### Scan status
-<pre>
 ##### path: <br/>
 GET https://www.myvirustotal/api/v1/files/scan/status/{uploadid}
 
