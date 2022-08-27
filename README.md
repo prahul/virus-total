@@ -53,11 +53,11 @@ request: <br/>
   "email":"my@email.com"  <br/>
 }
 
-response: 200 OK
-{
-  "registerid":"12345",
-  "token":"ABVVxTPG",
-  "data":{}
+response: 200 OK <br/>
+{ <br/>
+  "registerid":"12345", <br/>
+  "token":"ABVVxTPG", <br/>
+  "data":{} <br/>
 }
 
 ### Login user
