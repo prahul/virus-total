@@ -33,7 +33,9 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 * Logging: Humio log aggregation, Jaeger distributed tracing, Kibana Dashboard
 * Load balancer: F5, API Gateway
 * Application security: OAUTH (jwt token), Istio Service Mesh
+* Governance: Open Policy Agent, Sonar
 * Programming language: Java, Python, Groovy, Angular
+* Testing: Spock, Karate, Jmeter, Consumer contract
 * Operating System: Linux
 * API: REST, 12 Factor, Swagger
 
@@ -60,6 +62,7 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 * Use CQRS pattern for design of components
 * Use Cloud Native principles in the overall design and architecture
 * Use monitoring and show metrics to surface the golden signals
+* CI/CD automation, testing, governance
 * Have an active / warm data center architecture
 * Consider using Content Delivery Network (CDN) for access for the system from different regions
 * Setup auto deplication between data centers / regions. 
