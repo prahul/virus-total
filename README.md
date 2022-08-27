@@ -42,7 +42,7 @@ REST API and microservices development 12 factor principles to be used
 
 ### Register user
 path: <br/>
-POST https://www.myvirustotal/api/users/register
+POST https://www.myvirustotal/api/v1/users/register
 
 request: <br/>
 {  <br/>
@@ -67,7 +67,7 @@ response: 200 OK <br/>
 
 ### Login user
 path: <br/>
-POST https://www.myvirustotal/api/users/login
+POST https://www.myvirustotal/api/v1/users/login
 
 request: <br/>
 {  <br/>
@@ -88,7 +88,29 @@ response: 200 OK <br/>
   "data":{} <br/>
   } <br/>
 }
+
 ### Upload file
+path: <br/>
+POST https://www.myvirustotal/api/v1/files/upload
+
+request: <br/>
+{  <br/>
+  "filename":"abc.txt",  <br/>
+  "filetype":"txt",  <br/>
+  "filesize":"100"  <br/>
+}
+
+response: 200 OK <br/>
+{ <br/>
+  "status":"SUCCESS", <br/>
+  "error":{}, <br/>
+  "responsedata":{ <br/>
+  "uploadid":"12345",  <br/>
+  "data":{} <br/>
+  } <br/>
+}
+
+
 ### File upload status
 ### Scan status
 ### Scan results
@@ -111,3 +133,9 @@ response: 200 OK <br/>
 }
 
 ### Filemetadatascaninfo
+{ <br/>
+ "uploadid":"12345", <br/>
+ "filename":"abc.txt",  <br/>
+ "filetype":"txt",  <br/>
+ "filesize":"100"  <br/>
+}
