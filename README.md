@@ -59,6 +59,7 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 * Use Circuit breaker and rate limting patterns
 * Use CQRS pattern for design of components
 * Use Cloud Native principles in the overall design and architecture
+* Use monitoring and show metrics to surface the golden signals
 * Have an active / warm data center architecture
 * Consider using Content Delivery Network (CDN) for access for the system from different regions
 * Setup auto deplication between data centers / regions. 
@@ -69,7 +70,8 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 * Use horizontally scalable schema less database
 * Use object storage to have infinite storage capacity
 * Use data catalog and search engines to flatten and search data
-* Have BigData and Datalake for storing the data and building data pipelines, Analytics , Machone Learning models and AI  
+* Use BigData/Datalake for storing the data and building data pipelines, Analytics , Machine Learning models and AI
+* File formats like csv, json, avro, parquet can be used
 
 ## API
 REST API and microservices development 12 factor principles to be used
