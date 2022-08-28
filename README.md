@@ -51,6 +51,7 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 * Use 12 factor principles of API development
 * Use JSON for microservices and Avro for events
 * Use containerized approach which can be horizontally sclable for load and performance
+* File can be uploaded with the format <userid>_<timestamp>_<file name> . While displaying to the user, only filename will be shown
 
 ### Security
 * Protect the service components using OAUTH and Service Mesh
@@ -152,6 +153,7 @@ POST https://www.myvirustotal/api/v1/files/upload
   "error":{}, <br/>
   "responsedata":{ <br/>
   "uploadid":"12345",  <br/>
+  "uploadlocation":"https://mystorageservice/user_timestamp_abc.txt",  <br/>
   "data":{} <br/>
   } <br/>
 }
@@ -173,6 +175,7 @@ GET https://www.myvirustotal/api/v1/files/upload/status/{uploadid}
   "filename":"abc.txt",  <br/>
   "filesize":"100", <br/>
   "uploadsize":"50", <br/>
+  "uploadlocation":"https://mystorageservice/user_timestamp_abc.txt",  <br/>
   "elapsedtime":"100", <br/>
   "data":{} <br/>
   } <br/>
@@ -191,6 +194,7 @@ GET https://www.myvirustotal/api/v1/files/scan/status/{uploadid}
   "error":{}, <br/>
   "responsedata":{ <br/>
   "uploadid":"12345",  <br/>
+  "uploadlocation":"https://mystorageservice/user_timestamp_abc.txt",  <br/>
   "filesize":"100", <br/>
   "filename":"abc.txt",  <br/>
   "scans":[ <br/>
@@ -244,6 +248,7 @@ GET https://www.myvirustotal/api/v1/files/scan/search/{uploadid}
   "responsedata":[{ 
      { <br/>
         "uploadid":"12345",  <br/>
+        "uploadlocation":"https://mystorageservice/user_timestamp_abc.txt",  <br/>
         "filesize":"100", <br/>
         "filename":"abc.txt",  <br/>
         "scans":[ <br/>
@@ -305,6 +310,7 @@ GET https://www.myvirustotal/api/v1/files/scan/search/{uploadid}
 <pre>
 { <br/>
  "uploadid":"12345", <br/>
+ "uploadlocation":"https://mystorageservice/user_timestamp_abc.txt",  <br/>
  "filename":"abc.txt",  <br/>
  "filetype":"txt",  <br/>
  "filesize":"100",  <br/>
