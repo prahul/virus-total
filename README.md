@@ -18,7 +18,7 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 * Design will be able to accommodate the addition of new AV engines or metadata scripts.  These additions should be as minimally invasive to the running system as possible (i.e. minimal or zero system downtime, no “big bang” deployments, etc.).
 
 ## System design
-<img width="1002" alt="image" src="https://user-images.githubusercontent.com/2245716/186568721-e29367ef-c8fc-409e-b542-ec222895e4dd.png">
+![image](https://user-images.githubusercontent.com/2245716/187091542-64467513-e445-4b51-b33b-7198b191c189.png)
 
 ## Technology components
 * Containerization: Docker, Kubernetes, OpenShift
@@ -26,7 +26,7 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 * Registry: Artifactory
 * Datastore: MaongoDB, Big Data/Datalake, AI/ML
 * Search engine: SOLR
-* Storage: Object
+* Storage: Block (Object storage is an alternative)
 * CI/CD pipeline: Jenkins
 * Cache: CDN, Redis
 * Monitoring: Dynatrace, Runbook Automation, ServiceNow
@@ -71,7 +71,7 @@ Retrieves metadata about uploaded files (including file attributes, metadata and
 ### Data driven
 * Make a data driven architecture to manage able to manage the volume, velocity, value, variety and veracity of data
 * Use horizontally scalable schema less database
-* Use object storage to have infinite storage capacity
+* Use block storage. As an alternative object storage having infinite storage capacity can be used on the cloud
 * Use data catalog and search engines to flatten and search data
 * Use BigData/Datalake for storing the data and building data pipelines, Analytics , Machine Learning models and AI
 * File formats like csv, json, avro, parquet can be used
